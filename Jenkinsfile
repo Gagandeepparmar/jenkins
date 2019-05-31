@@ -4,7 +4,7 @@ pipeline {
                         stage('One') {
                                 steps {
                                         echo 'hi this is gagandeep'
-                                }
+                                       }
                         }
                         stage ('two') {
                                 steps {
@@ -14,11 +14,13 @@ pipeline {
                         }
                         stage('Three'){
                                 when {
-                                        not {
+                                      not {
                                                 branch "master"
-                                        }
+                                      }
+                                }
                                 steps {
                                         echo " hello"
+                                }
                         }
                 }
 }
