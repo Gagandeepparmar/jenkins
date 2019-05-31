@@ -22,5 +22,26 @@ pipeline {
                                         echo " hello"
                                 }
                         }
+                        stage('four for parallel example') {
+                                                               parallel {
+                                                                     stage('unit test') {
+                                                                                        steps {
+                                                                                                echo "Running the unit test"
+                                                                                        }
+                                                                     }
+                                                                     stage('Integration test') {
+                                                                                        agent {
+                                                                                                docker {
+                                                                                                        reuseNode false
+                                                                                                        image 'ubuntu'
+                                                                                                }
+                                                                                        }
+                                                                                        }
+                                                                                        steps {
+                                                                                                echo ' Running the integration testing'
+                                                                                              }
+                                                                     }
+                                                               }
+                        }
                 }
 }
