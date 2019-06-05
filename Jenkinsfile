@@ -58,8 +58,7 @@
                 }
 }"""
 
-list = ("a,b,c,d")
-    for (int i = 0; i < list[i]; i++) {
-        sh "echo Hello ${list[i]}"
-    }
+for(int i=1; i <5; i++){
+    println i
+}
 
