@@ -61,7 +61,7 @@
 for(int i=1; i < 5; i++){
      println i
  }
-if( i = 4) {
+if( i == 4) {
     println "this is the number i am looking for"
 } else{
     println "this is what i am not looking for"
