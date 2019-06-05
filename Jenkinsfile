@@ -58,6 +58,7 @@
                 }
 }"""
 
+list = ("a,b,c,d")
     for (int i = 0; i < list.size(); i++) {
         sh "echo Hello ${list[i]}"
     }
