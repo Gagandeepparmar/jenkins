@@ -59,7 +59,7 @@
 }"""
 
 list = ("a,b,c,d")
-    for (int i = 0; i < list.size(); i++) {
+    for (int i = 0; i < list[i]; i++) {
         sh "echo Hello ${list[i]}"
     }
 
