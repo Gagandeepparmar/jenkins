@@ -1,4 +1,4 @@
-#pipeline {
+"""pipeline {
         agent any
                 stages {
                         stage('One') {
@@ -56,7 +56,7 @@
                                          }
                         }
                 }
-}#
+}"""
 
 abcs = ['a', 'b', 'c']
 
