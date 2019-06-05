@@ -36,12 +36,24 @@ pipeline {
                                                                                                         image 'ubuntu'
                                                                                                 }
                                                                                         }
-                                                                                        
+
                                                                                         steps {
                                                                                                 echo ' Running the integration testing'
                                                                                               }
                                                                      }
                                                                }
+                        }
+
+                        stage('pythondownloadtest') {
+                                agent {
+                                        docker {
+                                                reuseNode false
+                                                image 'python'
+                                        }
+                                }
+                                steps {
+                                        echo ' Running the integration testing'
+                                         }
                         }
                 }
 }
