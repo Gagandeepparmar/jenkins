@@ -58,16 +58,16 @@
                 }
 }"""
 
-for(int i=1; i < 5; i++){
+"""for(int i=1; i < 5; i++){
      println i
  }
 if( i == 4) {
     print "this is the number i am looking for"
 } else{
     print "this is what i am not looking for"
-}
-"""String message = ''
-for (int i = 0; i < 5; i++) {
-    message = message + "hi how are you "
-    println message
 }"""
+String message = ''
+for (int i = 0; i < 5; i++) {
+    message = message + "* "
+    println message
+}
