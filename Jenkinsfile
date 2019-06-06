@@ -66,8 +66,8 @@ if( i == 4) {
 } else{
     print "this is what i am not looking for"
 }"""
-String message = ''
+String star = ''
 for (int i = 0; i < 5; i++) {
-    message = message + "* "
-    println message
+    star = "* "
+    println star
 }
