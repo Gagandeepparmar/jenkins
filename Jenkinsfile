@@ -62,9 +62,9 @@ for(int i=1; i < 5; i++){
      println i
  }
 if( i == 4) {
-    println "this is the number i am looking for"
+    print "this is the number i am looking for"
 } else{
-    println "this is what i am not looking for"
+    print "this is what i am not looking for"
 }
 """String message = ''
 for (int i = 0; i < 5; i++) {
