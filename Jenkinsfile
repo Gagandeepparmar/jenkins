@@ -68,6 +68,6 @@ if( i == 4) {
 }"""
 String star = ''
 for (int i = 0; i < 5; i++) {
-    star = "* "
+    star = i + "* "
     println star
 }
