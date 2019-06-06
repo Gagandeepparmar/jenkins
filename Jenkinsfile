@@ -67,7 +67,7 @@ if( i == 4) {
     print "this is what i am not looking for"
 }"""
 
-
+string stars = ''
 for (int i = 0; i < 5; i++) {
     stars = stars + "* "
     println stars
