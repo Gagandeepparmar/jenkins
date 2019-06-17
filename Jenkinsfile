@@ -1,4 +1,4 @@
-"""pipeline {
+pipeline {
         agent any
                 stages {
                         stage('One') {
@@ -56,7 +56,7 @@
                                          }
                         }
                 }
-}"""
+}
 
 """for(int i=1; i < 5; i++){
      println i
@@ -73,7 +73,7 @@ for (int i = 0; i < 5; i++) {
     println stars
 }"""
 
-pipeline {
+"""pipeline {
     agent {
         docker {
             image 'node:6-alpine'
@@ -95,4 +95,4 @@ pipeline {
             }
         }
     }
-}
+}"""
