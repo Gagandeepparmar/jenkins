@@ -105,9 +105,7 @@ stages {
     stage('build') {
         agent any
         steps {
-            script {
                 showMavenVersion('mvn version')
-            }
         }
     }
 }
