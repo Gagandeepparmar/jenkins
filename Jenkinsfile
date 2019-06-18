@@ -99,7 +99,7 @@ for (int i = 0; i < 5; i++) {
 
 
 
-pipeline {
+"""pipeline {
 agent any
 stages {
     stage('build') {
@@ -115,4 +115,26 @@ stages {
 def showMavenVersion(String a) {
         bat 'mvn -v'
         echo a
+}"""
+
+
+pipeline{
+    agent any
+        stages{
+                stage("clean"){
+                    steps{
+                        sh "mvn clean"
+                        }
+                    }
+                stage("test"){
+                    steps{
+                        sh "mvn test"
+                    }
+                }
+                stage("package"){
+                    steps{
+                        sh "mvn package"
+                    }
+                }
+        }
 }
