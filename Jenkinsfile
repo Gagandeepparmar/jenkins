@@ -1,4 +1,4 @@
-pipeline {
+"""pipeline {
         agent any
                 stages {
                         stage('One') {
@@ -56,7 +56,7 @@ pipeline {
                                          }
                         }
                 }
-}
+}"""
 
 """for(int i=1; i < 5; i++){
      println i
@@ -96,3 +96,25 @@ for (int i = 0; i < 5; i++) {
         }
     }
 }"""
+
+
+
+pipeline {
+agent any
+stages {
+    stage('build') {
+        agent any
+        steps {
+            script {
+                showMavenVersion('mvn version')
+            }
+        }
+    }
+}
+
+}
+
+def showMavenVersion(String a) {
+        bat 'mvn -v'
+        echo a
+}
