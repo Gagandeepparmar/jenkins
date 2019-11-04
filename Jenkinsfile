@@ -1,4 +1,4 @@
-"""pipeline {
+pipeline {
         agent any
                 stages {
                         stage('One') {
@@ -56,7 +56,7 @@
                                          }
                         }
                 }
-}"""
+}
 
 """for(int i=1; i < 5; i++){
      println i
@@ -118,7 +118,7 @@ def showMavenVersion(String a) {
 }"""
 
 
-pipeline{
+"""pipeline{
     agent any
         stages{
                 stage("clean"){
@@ -137,4 +137,4 @@ pipeline{
                     }
                 }
         }
-}
+}"""
